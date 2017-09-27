@@ -45,7 +45,7 @@
             android:id="@+id/etxDolar"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp" />
 
     </LinearLayout>
 
@@ -59,14 +59,14 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rBtnDolar"
+            android:id="@+id/rbtnDolar"
             android:checked="true"
             android:text="@string/dolaresAEuros"
             android:textSize="20dp"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rBtnEuro"
+            android:id="@+id/rbtnEuro"
             android:text="@string/eurosADolares"
             android:textSize="20dp"/>
     </RadioGroup>
