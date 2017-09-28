@@ -23,6 +23,7 @@
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginLeft="37dp"
+        android:inputType="numberDecimal"
 
         />
 
@@ -43,13 +44,16 @@
             />
         <EditText
             android:id="@+id/etxDolar"
+            android:enabled="false"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"/>
 
     </LinearLayout>
 
     <RadioGroup
+        android:id="@+id/rgpConversor"
         android:layout_below="@+id/lLay1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,13 +64,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rbtnDolar"
-            android:checked="true"
             android:text="@string/dolaresAEuros"
             android:textSize="20dp"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rbtnEuro"
+            android:checked="true"
             android:text="@string/eurosADolares"
             android:textSize="20dp"/>
     </RadioGroup>
@@ -78,6 +82,7 @@
         android:text="Convertir"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
+        android:onClick="onClick"
         />
 
 
