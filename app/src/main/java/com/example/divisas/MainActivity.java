@@ -12,7 +12,11 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-
+/**
+ * Aplicación que hace el cambio de euro a dolar y viceversa
+ * @version 1.0
+ * @author Alejandro Mechiné Gamarra
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     double Euro = 0d;
@@ -33,12 +37,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         convertirDivisa = (Button) findViewById(R.id.btnConvertir);
         etxEuro = (EditText) findViewById(R.id.etxEuro);
         etxDolar = (EditText) findViewById(R.id.etxDolar);
-        //convertirDivisa.setOnClickListener(this);
-        etxDolar.setText("0");
-        etxEuro.setText("0");
         rbtnDolar = (RadioButton) findViewById(R.id.rbtnDolar);
         rbtnEuro = (RadioButton) findViewById(R.id.rbtnEuro);
         rgpConversor = (RadioGroup) findViewById(R.id.rgpConversor);
+        etxDolar.setText("0");
+        etxEuro.setText("0");
         rgpConversor.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
@@ -53,17 +56,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     etxEuro.setEnabled(true);
                     etxDolar.setText("0");
                     etxEuro.setText("0");
-
                 }
             }
         });
+
     }
 
     @Override
     public void onClick(View view) {
-
-
-
         if (rbtnDolar.isChecked()) {
             if (etxDolar.getText().length() > 0) {
                 try {
